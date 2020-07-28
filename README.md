@@ -57,43 +57,42 @@ The result of label times distribution of Base A/B in section Theoretical Analys
 The python program for run the results.
 If you want to get a specific numerical results, you can run 114-128 lines.
 
-Eza: $5*k^2*r^5*(k - 1)/(4*(k^3/4 - 1)) + 5*k^2*r^4*(k - 1)*(-r + 1)/(k^3/4 - 1) + 15*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + 5*k^2*r^2*(k - 1)*(-r + 1)^3/(k^3/4 - 1) + 5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r^3*(k/2 - 1)/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(k^3/4 - 1) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)$
-<a href="https://www.codecogs.com/eqnedit.php?latex=5*k^2*r^5*(k&space;-&space;1)/(4*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^4*(k&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;15*k^2*r^3*(k&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^2*(k&space;-&space;1)*(-r&space;&plus;&space;1)^3/(k^3/4&space;-&space;1)&space;&plus;&space;5*k^2*r*(k&space;-&space;1)*(-r&space;&plus;&space;1)^4/(4*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^3*(k/2&space;-&space;1)/(2*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^2*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;3*k*r*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;r*(k/2&space;-&space;1)/(k^3/4&space;-&space;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?5*k^2*r^5*(k&space;-&space;1)/(4*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^4*(k&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;15*k^2*r^3*(k&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^2*(k&space;-&space;1)*(-r&space;&plus;&space;1)^3/(k^3/4&space;-&space;1)&space;&plus;&space;5*k^2*r*(k&space;-&space;1)*(-r&space;&plus;&space;1)^4/(4*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^3*(k/2&space;-&space;1)/(2*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^2*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;3*k*r*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;r*(k/2&space;-&space;1)/(k^3/4&space;-&space;1)" title="5*k^2*r^5*(k - 1)/(4*(k^3/4 - 1)) + 5*k^2*r^4*(k - 1)*(-r + 1)/(k^3/4 - 1) + 15*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + 5*k^2*r^2*(k - 1)*(-r + 1)^3/(k^3/4 - 1) + 5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r^3*(k/2 - 1)/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(k^3/4 - 1) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)" /></a>
+Eza: <a href="https://www.codecogs.com/eqnedit.php?latex=5*k^2*r^5*(k&space;-&space;1)/(4*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^4*(k&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;15*k^2*r^3*(k&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^2*(k&space;-&space;1)*(-r&space;&plus;&space;1)^3/(k^3/4&space;-&space;1)&space;&plus;&space;5*k^2*r*(k&space;-&space;1)*(-r&space;&plus;&space;1)^4/(4*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^3*(k/2&space;-&space;1)/(2*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^2*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;3*k*r*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;r*(k/2&space;-&space;1)/(k^3/4&space;-&space;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?5*k^2*r^5*(k&space;-&space;1)/(4*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^4*(k&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;15*k^2*r^3*(k&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;5*k^2*r^2*(k&space;-&space;1)*(-r&space;&plus;&space;1)^3/(k^3/4&space;-&space;1)&space;&plus;&space;5*k^2*r*(k&space;-&space;1)*(-r&space;&plus;&space;1)^4/(4*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^3*(k/2&space;-&space;1)/(2*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^2*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)/(k^3/4&space;-&space;1)&space;&plus;&space;3*k*r*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;r*(k/2&space;-&space;1)/(k^3/4&space;-&space;1)" title="5*k^2*r^5*(k - 1)/(4*(k^3/4 - 1)) + 5*k^2*r^4*(k - 1)*(-r + 1)/(k^3/4 - 1) + 15*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + 5*k^2*r^2*(k - 1)*(-r + 1)^3/(k^3/4 - 1) + 5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r^3*(k/2 - 1)/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(k^3/4 - 1) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)" /></a>
 
-Pza1: $5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)$
+Pza1: <a href="https://www.codecogs.com/eqnedit.php?latex=5*k^2*r*(k&space;-&space;1)*(-r&space;&plus;&space;1)^4/(4*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;r*(k/2&space;-&space;1)/(k^3/4&space;-&space;1)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?5*k^2*r*(k&space;-&space;1)*(-r&space;&plus;&space;1)^4/(4*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;r*(k/2&space;-&space;1)/(k^3/4&space;-&space;1)" title="5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)" /></a>
 
-Pza2: $5*k^2*r^2*(k - 1)*(-r + 1)^3/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(2*(k^3/4 - 1))$
+Pza2: <a href="https://www.codecogs.com/eqnedit.php?latex=5*k^2*r^2*(k&space;-&space;1)*(-r&space;&plus;&space;1)^3/(2*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^2*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)/(2*(k^3/4&space;-&space;1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?5*k^2*r^2*(k&space;-&space;1)*(-r&space;&plus;&space;1)^3/(2*(k^3/4&space;-&space;1))&space;&plus;&space;3*k*r^2*(k/2&space;-&space;1)*(-r&space;&plus;&space;1)/(2*(k^3/4&space;-&space;1))" title="5*k^2*r^2*(k - 1)*(-r + 1)^3/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(2*(k^3/4 - 1))" /></a>
 
-Pza3: $5*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + k*r^3*(k/2 - 1)/(2*(k^3/4 - 1))$
+Pza3: <a href="https://www.codecogs.com/eqnedit.php?latex=5*k^2*r^3*(k&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;k*r^3*(k/2&space;-&space;1)/(2*(k^3/4&space;-&space;1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?5*k^2*r^3*(k&space;-&space;1)*(-r&space;&plus;&space;1)^2/(2*(k^3/4&space;-&space;1))&space;&plus;&space;k*r^3*(k/2&space;-&space;1)/(2*(k^3/4&space;-&space;1))" title="5*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + k*r^3*(k/2 - 1)/(2*(k^3/4 - 1))" /></a>
 
-Pza4: $5*k^2*r^4*(k - 1)*(-r + 1)/(4*(k^3/4 - 1))$
+Pza4: <a href="https://www.codecogs.com/eqnedit.php?latex=5*k^2*r^4*(k&space;-&space;1)*(-r&space;&plus;&space;1)/(4*(k^3/4&space;-&space;1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?5*k^2*r^4*(k&space;-&space;1)*(-r&space;&plus;&space;1)/(4*(k^3/4&space;-&space;1))" title="5*k^2*r^4*(k - 1)*(-r + 1)/(4*(k^3/4 - 1))" /></a>
 
-Pza5: $k^2*r^5*(k - 1)/(4*(k^3/4 - 1))$
+Pza5: <a href="https://www.codecogs.com/eqnedit.php?latex=k^2*r^5*(k&space;-&space;1)/(4*(k^3/4&space;-&space;1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?k^2*r^5*(k&space;-&space;1)/(4*(k^3/4&space;-&space;1))" title="k^2*r^5*(k - 1)/(4*(k^3/4 - 1))" /></a>
 
 Since the results of Base B are too complicated, we will express these in three parts: gens, monmos, and coefs.
 ## Ezb.xlsx
-The monmos and coef of the $E(B)$.
-Ezb.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))$
+The monmos and coef of the E(B).
+Ezb.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))" /></a>
 
 ## Pzb1.xlsx
-The monmos and coef of the $P(Z_B=1)$.
-Pzb1.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1))$
+The monmos and coef of the P(Z<sub>B</sub>=1).
+Pzb1.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1))" /></a>
 
 ## Pzb2.xlsx
-The monmos and coef of the $P(Z_B=2)$.
-Pzb2.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2))$
+The monmos and coef of the $P(Z<sub>B</sub>=2)$.
+Pzb2.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2))" /></a>
 
 ## Pzb3.xlsx
-The monmos and coef of the $P(Z_B=3)$.
-Pzb3.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3))$
+The monmos and coef of the $P(Z<sub>B</sub>=3)$.
+Pzb3.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3))" /></a>
 
 ## Pzb4.xlsx
-The monmos and coef of the $P(Z_B=4)$.
-Pzb4.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))$
+The monmos and coef of the $P(Z<sub>B</sub>=4)$.
+Pzb4.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))" /></a>
 
 ## Pzb5.xlsx
-The monmos and coef of the $P(Z_B=5)$.
-Pzb5.gens: $(r, k, 1/(k^3/4 - 1), f(1), f(2), f(3), f(4))$
+The monmos and coef of the $P(Z<sub>B</sub>=5)$.
+Pzb5.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" title="(r, k, 1/(k^3/4 - 1), f(1), f(2), f(3), f(4))" /></a>
 
 # INT_label
 We build an emulation-based network prototype to demonstrate INT-label performance. The hardware configuration is i5-8600k CPU and 32GB memory with Ubuntu 16.04 OS. The prototype is based on Mininet and consists of 1 controller, 4 Spine switches, 4 Leaf switches, 4 ToR switches and 8 servers.
