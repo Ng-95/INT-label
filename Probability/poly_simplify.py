@@ -60,6 +60,20 @@ def calculate_E():
 	C5_3 = C4_3 * (1 - g.subs(x, f(3)) - f(3)) + C4_2 * (g.subs(x, f(2)) + f(2))
 	C5_4 = C4_4 * (1 - g.subs(x, f(4)) - f(4)) + C4_3 * (g.subs(x, f(3)) + f(3))
 	C5_5 = C4_5 * (1 - g.subs(x, f(5)) - f(5)) + C4_4 * (g.subs(x, f(4)) + f(4))
+
+	# E(ZA)
+	print('Eza:', Eza)
+	# Pza1
+	print('Pza1:', Pza.subs({s: 1}))
+	# Pza2
+	print('Pza2:', Pza.subs({s: 2}))
+	# Pza3
+	print('Pza3:', Pza.subs({s: 3}))
+	# Pza4
+	print('Pza4:', Pza.subs({s: 4}))
+	# Pza5
+	print('Pza5:', Pza.subs({s: 5}))
+
 	# E(ZB)
 	Pzb0 = H1 * C1_0 + H3 * C3_0 + H5 * C5_0
 	Pzb1 = H1 * C1_1 + H3 * C3_1 + H5 * C5_1
@@ -111,21 +125,22 @@ def calculate_E():
 	df_Pzb5['coef'] = p_Pzb5.as_dict().values()
 	df_Pzb5.to_excel('Pzb5.xlsx', index=False)
 
-	# # f: distribution function k: pod num	r:Ts/T
-	# temp = {f(0): 0, f(1): 1, f(2): 1, f(3): 1, f(4): 1, k: 20, r: 1 / 1000}
-	# print('Pza:')
-	# print(Pza.subs({k: 2, r: 1 / 10, s: 1}))
-	# print(Pza.subs({k: 2, r: 1 / 10, s: 2}))
-	# print(Pza.subs({k: 2, r: 1 / 10, s: 3}))
-	# print(Pza.subs({k: 2, r: 1 / 10, s: 4}))
-	# print(Pza.subs({k: 2, r: 1 / 10, s: 5}))
-	# print('Pzb:')
-	# print(Pzb1.subs(temp))
-	# print(Pzb2.subs(temp))
-	# print(Pzb3.subs(temp))
-	# print(Pzb4.subs(temp))
-	# print(Pzb5.subs(temp))
-	# print(C5_2.subs(temp))
+
+# # f: distribution function k: pod num	r:Ts/T
+# temp = {f(0): 0, f(1): 1, f(2): 1, f(3): 1, f(4): 1, k: 20, r: 1 / 1000}
+# print('Pza:')
+# print(Pza.subs({k: 2, r: 1 / 10, s: 1}))
+# print(Pza.subs({k: 2, r: 1 / 10, s: 2}))
+# print(Pza.subs({k: 2, r: 1 / 10, s: 3}))
+# print(Pza.subs({k: 2, r: 1 / 10, s: 4}))
+# print(Pza.subs({k: 2, r: 1 / 10, s: 5}))
+# print('Pzb:')
+# print(Pzb1.subs(temp))
+# print(Pzb2.subs(temp))
+# print(Pzb3.subs(temp))
+# print(Pzb4.subs(temp))
+# print(Pzb5.subs(temp))
+# print(C5_2.subs(temp))
 
 
 # # k: pod num	r:Ts/T
