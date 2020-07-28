@@ -14,22 +14,84 @@ INT-label is decoupled from the topology, allowing seamless adaptation to link f
 Experiment result contains preliminary experimental results data and figures.
 
 ## Fig.2
-The impact of background traffic on coverage rate and INT header bandwidth occupation.
+The impact of label interval on coverage rate and bandwidth occupation.
 
 ## Fig.3
-The impact of data plane label interval on network-wide coverage rate during system cold start.
+The number of packet carried INT information under different label interval.
 
 ## Fig.4
-How the relation between label interval and telemetry resolution affects the coverage rate.
+The data plane label times under different label interval.
 
 ## Fig.5
-Network-wide coverage degradation due to loss of packets under Base and Pro strategies.
+How the relation between label interval and telemetry resolution affects the coverage rate.
 
 ## Fig.6
-Bandwidth overhead under different label/probe intervals (INT-label vs HULA).
+The impact of label interval on coverage rate and INT header bandwidth occupation.
 
 ## Fig.7
-Packet loss rate (due to rate limit) under different label/probe intervals (INT-label vs HULA).
+The impact of data plane label interval on network-wide coverage rate changes over time.
+
+## Fig.8
+Different coverage rates under Base A/B and Pro strategies.
+
+## Fig.9 
+Network-wide coverage degradation due to loss of packets under Base A/B and Pro strategies.
+
+## Fig.10 
+Packet loss rate (due to rate limit) under different label/probe intervals (Base A/B vs HULA).
+
+## Fig.11
+Distribution of label times.
+
+## Fig.12.13
+### plt.py
+The number of vantage servers required under different scale FatTree topologies.
+### plt2.py
+The bandwidth overhead under different scale FatTree topologies.
+
+# Probability
+The result of label times distribution of Base A/B in section Theoretical Analysis.
+
+## poly_simplify.py
+The python program for run the results.
+If you want to get a specific numerical results, you can run 114-128 lines.
+
+Eza: $5*k^2*r^5*(k - 1)/(4*(k^3/4 - 1)) + 5*k^2*r^4*(k - 1)*(-r + 1)/(k^3/4 - 1) + 15*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + 5*k^2*r^2*(k - 1)*(-r + 1)^3/(k^3/4 - 1) + 5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r^3*(k/2 - 1)/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(k^3/4 - 1) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)$
+
+Pza1: $5*k^2*r*(k - 1)*(-r + 1)^4/(4*(k^3/4 - 1)) + 3*k*r*(k/2 - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + r*(k/2 - 1)/(k^3/4 - 1)$
+
+Pza2: $5*k^2*r^2*(k - 1)*(-r + 1)^3/(2*(k^3/4 - 1)) + 3*k*r^2*(k/2 - 1)*(-r + 1)/(2*(k^3/4 - 1))$
+
+Pza3: $5*k^2*r^3*(k - 1)*(-r + 1)^2/(2*(k^3/4 - 1)) + k*r^3*(k/2 - 1)/(2*(k^3/4 - 1))$
+
+Pza4: $5*k^2*r^4*(k - 1)*(-r + 1)/(4*(k^3/4 - 1))$
+
+Pza5: $k^2*r^5*(k - 1)/(4*(k^3/4 - 1))$
+
+Since the results of Base B are too complicated, we will express these in three parts: gens, monmos, and coefs.
+## Ezb.xlsx
+The monmos and coef of the $E(B)$.
+Ezb.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))$
+
+## Pzb1.xlsx
+The monmos and coef of the $P(Z_B=1)$.
+Pzb1.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1))$
+
+## Pzb2.xlsx
+The monmos and coef of the $P(Z_B=2)$.
+Pzb2.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2))$
+
+## Pzb3.xlsx
+The monmos and coef of the $P(Z_B=3)$.
+Pzb3.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3))$
+
+## Pzb4.xlsx
+The monmos and coef of the $P(Z_B=4)$.
+Pzb4.gens: $(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))$
+
+## Pzb5.xlsx
+The monmos and coef of the $P(Z_B=5)$.
+Pzb5.gens: $(r, k, 1/(k^3/4 - 1), f(1), f(2), f(3), f(4))$
 
 # INT_label
 We build an emulation-based network prototype to demonstrate INT-label performance. The hardware configuration is i5-8600k CPU and 32GB memory with Ubuntu 16.04 OS. The prototype is based on Mininet and consists of 1 controller, 4 Spine switches, 4 Leaf switches, 4 ToR switches and 8 servers.
@@ -61,6 +123,8 @@ Include p4 source code, implemented SR-based INT function and data plane labelli
 ### my_int.p4
 Include Headers, Metadatas, parser, deparser and checksum calculator.
 SR-based INT function and data plane labelling function are implemented in the program.
+If you want to switch from Base A to B, change 0 to 100 in line 250 of my_int.p4.
+If you want to change the function $f()$ of Base B algorithm, change line 262-264 and 268 of my_int.p4.
 
 ### my_int.json
 The json file that compiled from my_int.p4 by p4c compiler.
@@ -111,7 +175,7 @@ Store global variable used to control the telemetry resolution.
 # How to run INT-label
 If you installed the dependencies and configured the database successfully, then you can run the system with commands below:
 
-## Base
+## Base A/B
 ```
 redis-cli config set notify-keyspace-events KEA
 cd controller/
@@ -119,6 +183,7 @@ python coverage.py
 cd topology/
 python clos.py
 ```
+If you want to switch from Base A to B, change 0 to 100 in line 250 of /INT_label/p4_source_code/my_int.p4.
 
 ## Pro
 ```
