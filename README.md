@@ -1,4 +1,3 @@
-<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
 # INT-label:Lightweight In-band Network-Wide Telemetry Without Explicitly Using Probe Packets
 
 Fine-grained, network-wide visibility is vital to reliably maintaining and troubleshooting high-density, mega-scale modern data center networks to accommodate heterogeneous mission-critical applications. However, traditional management protocols, such as SNMP, fall short of highresolution monitoring for highly dynamic data center networks due to the inefficient controller-driven, per-device polling mechanism. With end host-launched full-mesh pings, Pingmesh is capable of providing the maximum latency measurement coverage. Pingmesh is excellent but still flawed. It cannot extract hop-by-hop latency or look into the queue depth inside switches for in-depth analysis, but, for network applications such as load balancing, failure localization and management automation, these underlying information is increasingly insightful. In-band Network Telemetry (INT), one of the killer applications of P4, allows probe or data packets to query device-internal states, such as queue depth and queuing latency, when they pass through the data plane pipeline, which is considered promising and has been embedded into several venders’ latest merchant silicon. As a chip-level primitive, INT simply defines the interaction between the incoming packets and the device-internal states for monitoring. For network-wide telemetry, further orchestration on top of INT is needed.
@@ -79,19 +78,19 @@ The monmos and coef of the P(Z<sub>B</sub>=1).
 Pzb1.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1))" /></a>
 
 ## Pzb2.xlsx
-The monmos and coef of the $P(Z<sub>B</sub>=2)$.
+The monmos and coef of the P(Z<sub>B</sub>=2).
 Pzb2.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2))" /></a>
 
 ## Pzb3.xlsx
-The monmos and coef of the $P(Z<sub>B</sub>=3)$.
+The monmos and coef of the P(Z<sub>B</sub>=3).
 Pzb3.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3))" /></a>
 
 ## Pzb4.xlsx
-The monmos and coef of the $P(Z<sub>B</sub>=4)$.
+The monmos and coef of the P(Z<sub>B</sub>=4).
 Pzb4.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(0),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" title="(r, k, 1/(k^3/4 - 1), f(0), f(1), f(2), f(3), f(4))" /></a>
 
 ## Pzb5.xlsx
-The monmos and coef of the $P(Z<sub>B</sub>=5)$.
+The monmos and coef of the P(Z<sub>B</sub>=5).
 Pzb5.gens: <a href="https://www.codecogs.com/eqnedit.php?latex=(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?(r,&space;k,&space;1/(k^3/4&space;-&space;1),&space;f(1),&space;f(2),&space;f(3),&space;f(4))" title="(r, k, 1/(k^3/4 - 1), f(1), f(2), f(3), f(4))" /></a>
 
 # INT_label
